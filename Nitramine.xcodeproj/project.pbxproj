@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032374DB2A44D2EE0049D878 /* CapsuleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032374DA2A44D2EE0049D878 /* CapsuleText.swift */; };
+		032374DD2A44D68C0049D878 /* CenterAlign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032374DC2A44D68C0049D878 /* CenterAlign.swift */; };
+		032374DF2A44D7170049D878 /* TitledTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032374DE2A44D7170049D878 /* TitledTextBox.swift */; };
+		032374E32A44E2400049D878 /* PsychonautKit in Frameworks */ = {isa = PBXBuildFile; productRef = 032374E22A44E2400049D878 /* PsychonautKit */; };
+		032C645B2A4507D2004D08A3 /* TitledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C645A2A4507D2004D08A3 /* TitledView.swift */; };
+		03C573232A439B270038C1D3 /* SubstanceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C573222A439B270038C1D3 /* SubstanceInfo.swift */; };
+		03E2B09B2A43CF0B00A56648 /* ListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E2B09A2A43CF0B00A56648 /* ListElement.swift */; };
+		03EA6FB92A4540350069D894 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EA6FB82A4540350069D894 /* ImageView.swift */; };
 		03FF73962A42385600F26616 /* NitramineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF73952A42385600F26616 /* NitramineApp.swift */; };
 		03FF73982A42385600F26616 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF73972A42385600F26616 /* ContentView.swift */; };
 		03FF739A2A42385700F26616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FF73992A42385700F26616 /* Assets.xcassets */; };
@@ -14,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032374DA2A44D2EE0049D878 /* CapsuleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleText.swift; sourceTree = "<group>"; };
+		032374DC2A44D68C0049D878 /* CenterAlign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAlign.swift; sourceTree = "<group>"; };
+		032374DE2A44D7170049D878 /* TitledTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledTextBox.swift; sourceTree = "<group>"; };
+		032C645A2A4507D2004D08A3 /* TitledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledView.swift; sourceTree = "<group>"; };
+		03C573222A439B270038C1D3 /* SubstanceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstanceInfo.swift; sourceTree = "<group>"; };
+		03E2B09A2A43CF0B00A56648 /* ListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListElement.swift; sourceTree = "<group>"; };
+		03EA6FB82A4540350069D894 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		03FF73922A42385600F26616 /* Nitramine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nitramine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FF73952A42385600F26616 /* NitramineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitramineApp.swift; sourceTree = "<group>"; };
 		03FF73972A42385600F26616 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +41,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032374E32A44E2400049D878 /* PsychonautKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032374E02A44D9110049D878 /* Generic Views */ = {
+			isa = PBXGroup;
+			children = (
+				032374DA2A44D2EE0049D878 /* CapsuleText.swift */,
+				032374DC2A44D68C0049D878 /* CenterAlign.swift */,
+				032374DE2A44D7170049D878 /* TitledTextBox.swift */,
+				032C645A2A4507D2004D08A3 /* TitledView.swift */,
+				03E2B09A2A43CF0B00A56648 /* ListElement.swift */,
+			);
+			path = "Generic Views";
+			sourceTree = "<group>";
+		};
 		03FF73892A42385600F26616 = {
 			isa = PBXGroup;
 			children = (
@@ -53,8 +81,11 @@
 			children = (
 				03FF73952A42385600F26616 /* NitramineApp.swift */,
 				03FF73972A42385600F26616 /* ContentView.swift */,
-				03FF73992A42385700F26616 /* Assets.xcassets */,
+				03C573222A439B270038C1D3 /* SubstanceInfo.swift */,
+				032374E02A44D9110049D878 /* Generic Views */,
 				03FF739B2A42385700F26616 /* Preview Content */,
+				03FF73992A42385700F26616 /* Assets.xcassets */,
+				03EA6FB82A4540350069D894 /* ImageView.swift */,
 			);
 			path = Nitramine;
 			sourceTree = "<group>";
@@ -83,6 +114,9 @@
 			dependencies = (
 			);
 			name = Nitramine;
+			packageProductDependencies = (
+				032374E22A44E2400049D878 /* PsychonautKit */,
+			);
 			productName = Nitramine;
 			productReference = 03FF73922A42385600F26616 /* Nitramine.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 03FF73892A42385600F26616;
+			packageReferences = (
+				032374E12A44E2400049D878 /* XCRemoteSwiftPackageReference "PsychonautKit" */,
+			);
 			productRefGroup = 03FF73932A42385600F26616 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +175,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03FF73982A42385600F26616 /* ContentView.swift in Sources */,
+				03EA6FB92A4540350069D894 /* ImageView.swift in Sources */,
 				03FF73962A42385600F26616 /* NitramineApp.swift in Sources */,
+				032374DF2A44D7170049D878 /* TitledTextBox.swift in Sources */,
+				032374DD2A44D68C0049D878 /* CenterAlign.swift in Sources */,
+				032C645B2A4507D2004D08A3 /* TitledView.swift in Sources */,
+				032374DB2A44D2EE0049D878 /* CapsuleText.swift in Sources */,
+				03C573232A439B270038C1D3 /* SubstanceInfo.swift in Sources */,
+				03E2B09B2A43CF0B00A56648 /* ListElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		032374E12A44E2400049D878 /* XCRemoteSwiftPackageReference "PsychonautKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TarballCoLtd/PsychonautKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		032374E22A44E2400049D878 /* PsychonautKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 032374E12A44E2400049D878 /* XCRemoteSwiftPackageReference "PsychonautKit" */;
+			productName = PsychonautKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03FF738A2A42385600F26616 /* Project object */;
 }

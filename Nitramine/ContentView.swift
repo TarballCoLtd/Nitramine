@@ -6,19 +6,54 @@
 //
 
 import SwiftUI
+import PsychonautKit
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+    @State var substances: [String]?
+    @State var loading = true
+    @State var search = ""
+    
+    var filtered: [String]? {
+        guard let substances = substances else { return substances }
+        guard !search.isEmpty else { return substances }
+        return substances.filter { $0.range(of: search, options: .caseInsensitive) != nil }
     }
-}
-
-#Preview {
-    ContentView()
+    
+    var body: some View {
+        NavigationView {
+            if loading {
+                HStack {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .padding(.trailing, 3)
+                    Text("Loading...")
+                }
+            } else {
+                if let filtered = filtered {
+                    List {
+                        ForEach(filtered, id: \.self) { substance in
+                            NavigationLink {
+                                SubstanceInfo(substance)
+                            } label: {
+                                Text(substance)
+                            }
+                        }
+                    }
+                    .navigationTitle("Substances")
+                    .searchable(text: $search)
+                    .refreshable {
+                        substances = try? await PWAPI.requestSubstances()
+                    }
+                } else {
+                    Text("Error loading.")
+                }
+            }
+        }
+        .onAppear {
+            Task {
+                substances = try? await PWAPI.requestSubstances()
+                loading = false
+            }
+        }
+    }
 }

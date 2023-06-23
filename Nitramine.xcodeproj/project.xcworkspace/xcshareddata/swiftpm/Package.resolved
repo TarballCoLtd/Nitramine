@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "psychonautkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TarballCoLtd/PsychonautKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "83bf570e0eadb8c187607fce1016b46da98a15db"
+      }
+    }
+  ],
+  "version" : 2
+}
